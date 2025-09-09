@@ -19,8 +19,6 @@ class Asteroid(CircleShape):
             return
        
         rand_ang = random.uniform(20,50)
-        #traj_first = self.velocity.rotate(rand_ang)
-        #traj_second = self.velocity.rotate(-rand_ang)
         new_radius = self.radius - ASTEROID_MIN_RADIUS
 
         first = Asteroid(self.position.x, self.position.y, new_radius)
